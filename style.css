@@ -1,0 +1,242 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: bebas-neue;
+    src: url(font/Bebas_Neue/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+    font-family: poppins-regular;
+    src: url(font/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: raleway-bold;
+    src: url(font/Raleway/Raleway-Bold.ttf);
+}
+
+@font-face {
+    font-family: raleway-regular;
+    src: url(font/Raleway/Raleway-Regular.ttf);
+}
+
+.header {
+    width: 100%;
+    height: 46px;
+    border-bottom: 1px solid black;
+    position: fixed;
+    background-color: rgb(235, 235, 235);
+    z-index: 9999;
+}
+
+.header .logo h1 {
+    font-size: 20px;
+    font-family: 'comic sans ms';
+    margin: 5px;
+    line-height: 36px;
+}
+
+.header .daftar ul li {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header .daftar ul li a {
+    color: black;
+    position: relative;
+    top: -38px;
+    right: 10px;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'comic sans ms';
+    border: 1px solid black;
+    padding: 3px 5px 3px 5px;
+}
+
+.header .daftar ul li a:hover {
+    background-color: chartreuse;
+}
+
+.cover {
+    width: 100%;
+    height: 500px;
+    background-image: url(img/makeup.jpg);
+    background-size: cover;
+    margin-bottom: 50px;
+    background-position: center;
+}
+
+.container {
+    width: 1000px;
+    height: auto;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+.container .deskripsi {
+    font-family: poppins-regular;
+    font-size: 18px;
+    text-align: center;
+}
+
+.container .gambar1 {
+    margin: auto;
+    width: 600px;
+    margin-top: 20px;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+.container h6 {
+    font-size: 20px;
+    background-color: rgb(235, 235, 235);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.container .gambar2 {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.container .gambar3 {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    transform: scale(0.65);
+}
+
+.container-video {
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-end;
+}
+
+.container-video .tumbal {
+    transform: scale(0);
+}
+
+.tbl-daftar {
+    background-color: chartreuse;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    width: 100px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 3px;
+    transform: scale(0);
+}
+
+.tbl-daftar h4 a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.tbl-daftar:hover {
+    background-color: #F54748;
+}
+
+.tbl-daftar h4 a:hover {
+    color: white;
+}
+
+@media screen and (max-width : 988.91px) {
+
+    .header {
+        height: 100px;
+        display: flex;
+    }
+
+    .header .logo {
+        text-align: center;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .header .daftar ul li a {
+        transform: scale(0);
+        position: absolute;
+    }
+
+    .cover {
+        width: 100%;
+        background-position: center;
+    }
+
+    .container {
+        width: auto;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    .container .deskripsi {
+        margin: auto;
+    }
+
+    .container .gambar1 {
+        width: auto;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container .gambar2 {
+        width: auto;
+        height: auto;
+        transform: scale(0.6);
+    }
+
+    .container .gambar3 {
+        width: auto;
+        height: auto;
+        transform: scale(0.4);
+    }
+
+    .container-video {
+        display: block;
+    }
+
+    .container-video iframe {
+        display: flex;
+        align-items: center;
+        margin: auto;
+        width: auto;
+        padding: 10px;
+
+    }
+
+    .tbl-daftar {
+        transform: scale(1);
+    }
+
+}
+
+@media screen and (max-width : 400px) {
+    .gambar1 {
+        transform: scale(0.8);
+    }
+
+    .gambar2 {
+        transform: scale(0.6);
+    }
+
+    .gambar3 {
+        transform: scale(0.2);
+    }
+
+    .container-video iframe {
+        position: relative;
+        right: 20px;
+    }
+}
